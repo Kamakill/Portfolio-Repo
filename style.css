@@ -1,0 +1,349 @@
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/photos/modern-red-backlit-keyboard-concept-computer-background-picture-id1142618498?k=20&m=1142618498&s=612x612&w=0&h=nEUEvSmCFFGfzP49d3-EGxhMOO6g-Wr4wawalcIFKY4=");
+  background-size: cover;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container {
+  position: relative;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1000px;
+  grid-template-rows: 100px 700px 1000px 700px 100px;
+  grid-template-areas:
+    "navbar"
+    "welcome"
+    "projects"
+    "contact"
+    "footer";
+}
+#navbar {
+  grid-area: navbar;
+  display: flex;
+  background: hsl(0, 100%, 50%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+ul {
+  margin: 10px;
+  padding: 10px 10px 10px 750px;
+}
+
+li {
+  display: inline;
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#header {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#welcome {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 700px;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-area: welcome;
+  margin: 0px;
+  padding: 0x;
+  background-image: url("https://img2.fonwall.ru/o/vr/earth-stars-lights-galaxy.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+#projects {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: grid;
+  grid-area: projects;
+  height: 1000px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-image: url("https://media.istockphoto.com/photos/modern-red-backlit-keyboard-concept-computer-background-picture-id1142618498?k=20&m=1142618498&s=612x612&w=0&h=nEUEvSmCFFGfzP49d3-EGxhMOO6g-Wr4wawalcIFKY4=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-size: 100% 100%;
+}
+
+#contact {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 700px;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  grid-area: contact;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("https://st2.depositphotos.com/1265075/7446/i/450/depositphotos_74468913-stock-photo-contact-us-icons-on-cubes.jpg");
+  background-size: cover;
+  background-repeat: no repeat;
+  background-attachment: absolute;
+  background-size: 100% 100%;
+}
+#footer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  background: #000000;
+  grid-area: footer;
+}
+
+h1 {
+  top: 120px;
+  text-align: center;
+  color: #008000;
+  font-size: 40px;
+}
+
+h2 {
+  position: relative;
+  font-size: 29px;
+  top: 0px;
+  margin: 20px;
+  padding: 20px;
+}
+
+h3 {
+  position: relative;
+  font-size: 42px;
+  top: 30px;
+  text-align: center;
+}
+
+h6 {
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  left: 500px;
+  top: 50px;
+}
+
+h8 {
+  font-size: 42px;
+  color: #ffffff;
+  position: relative;
+  top: 30px;
+}
+
+h9 {
+  font-size: 25px;
+  position: relative;
+  top: 60px;
+}
+
+.stars {
+  position: static;
+  background-color: #ffffff;
+  height: 5px;
+  width: 5px;
+  border-radius: 10%;
+  animation-iteration-count: infinite;
+}
+
+#back {
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+.star1 {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 200px;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+}
+
+.star2 {
+  position: absolute;
+  margin-top: 5px;
+  margin-right: 300px;
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+}
+
+.star3 {
+  position: absolute;
+  margin-top: 28px;
+  margin-left: 150px;
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+}
+
+.star4 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 700px;
+  animation-name: twinkle-4;
+  animation-duration: 1s;
+}
+
+.star5 {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 60%;
+  animation-name: twinkle-5;
+  animation-duration: 1s;
+}
+
+@keyframes twinkle-1 {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-2 {
+  40% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-3 {
+  60% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-4 {
+  80% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-5 {
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+#back {
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.project-tile {
+  position: absolute;
+  top: 100px;
+  bottom: 20px;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-self: baseline;
+  text-align: center;
+  width: 100%;
+  min-height: 50px;
+  font-size: 24px;
+  border: 5px;
+  border-color: #000000;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px 5px 5px 5px;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personal-portfolio {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+.tribute {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+.survey-form {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+.product-landing {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+.technical-documentation {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+.article {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: rgba(45, 45, 45, 0.9);
+}
